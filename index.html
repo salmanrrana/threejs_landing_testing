@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div className="stars"></div>
-    <div className="rig-and-text">
-      <div className="twinkling landing-body">
-        <div className="landing-text">
-          <div className="slide1"><p>Harnessing Advanced Analytics</p></div>
-          <div className="slide2"><p>Condition-Based Maintenance</p></div>
-          <div className="slide3"><p>Improving Your Efficiency</p></div>
+    <div class="stars"></div>
+    <div class="rig-and-text">
+      <div class="twinkling landing-body">
+        <div class="landing-text">
+          <div class="slide1"><p>Harnessing Advanced Analytics</p></div>
+          <div class="slide2"><p>Condition-Based Maintenance</p></div>
+          <div class="slide3"><p>Improving Your Efficiency</p></div>
         </div>
       </div>
-      <div className="filtered"></div>
+      <div class="filtered"></div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.js"></script>
       <script src="js/obj.js"></script>
@@ -80,7 +80,7 @@
             object.position.y -= 150;
             object.position.x = 290;
 
-            object.rotation.y = 100;
+            object.children[0].material.wireframe = true;
 
             object.rotation.y = 100;
             // object.rotation.z = 150;
