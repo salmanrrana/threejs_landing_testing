@@ -95,17 +95,50 @@ canvas {
   position: absolute;
 }
 
+@keyframes textAppears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes textAppears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes textAppears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes textAppears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .landing-text {
+  animation: 6.2s ease-in 0s 1 textAppears;
   font-family: "Montserrat", sans-serif;
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 0.1em;
   margin-bottom: 400px !important;
   text-align: center;
   text-shadow: 5px 5px 8px #ffffff61;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 900;
   padding: 120px;
-  /* max-width: 600px; */
 }
 
 .slide1,
@@ -115,16 +148,16 @@ canvas {
   max-width: 600px;
 }
 .slide1 {
-  animation: fade 17s infinite;
-  -webkit-animation: fade 17s infinite;
+  animation: fade 20s infinite;
+  -webkit-animation: fade 20s infinite;
 }
 .slide2 {
-  animation: fade2 17s infinite;
-  -webkit-animation: fade2 17s infinite;
+  animation: fade2 20s infinite;
+  -webkit-animation: fade2 20s infinite;
 }
 .slide3 {
-  animation: fade3 17s infinite;
-  -webkit-animation: fade3 17s infinite;
+  animation: fade3 20s infinite;
+  -webkit-animation: fade3 20s infinite;
 }
 @keyframes fade {
   0% {
