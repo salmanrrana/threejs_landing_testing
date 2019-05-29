@@ -4,15 +4,19 @@
     <meta charset="utf-8" />
     <title>Refinery</title>
     <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,700,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="stars"></div>
     <div class="rig-and-text">
       <div class="twinkling landing-body">
         <div class="landing-text">
-          <div class="slide1"><p>Harnessing Advanced Analytics</p></div>
-          <div class="slide2"><p>Condition Based Maintenance</p></div>
-          <div class="slide3"><p>Improving Your Efficiency</p></div>
+          <div class="slide1"><p>Condition Based Maintenance</p></div>
+          <div class="slide2"><p>Improving Your Efficiency</p></div>
+          <div class="slide3"><p>Harnessing Advanced Analytics</p></div>
         </div>
       </div>
       <div class="filtered"></div>
@@ -33,9 +37,9 @@
           0.1,
           1000
         );
-        camera.position.z = -150;
-        camera.position.y = 90;
-        camera.position.x = -90;
+        camera.position.z = -220;
+        camera.position.y = 160;
+        camera.position.x = 20;
 
         //Create a Full Screen WebGL Renderer
         var renderer = new THREE.WebGLRenderer({
@@ -76,14 +80,14 @@
           objLoader.load("resize2.obj", function(object) {
             scene.add(object);
             ourObj = object;
-            object.position.z -= 700;
-            object.position.y -= 150;
-            object.position.x = 290;
+            object.position.z -= 600;
+            object.position.y -= 100;
+            object.position.x = 250;
 
             object.children[0].material.wireframe = true;
 
-            object.rotation.y = 100;
-            // object.rotation.z = 150;
+            object.rotation.y = 60;
+            // object.rotation.z = 10;
 
             this.tl = new TimelineMax();
             // this.tl.from(ourObj.scale, 2, {
@@ -104,7 +108,7 @@
           requestAnimationFrame(render);
 
           //Rotate the object indefinitely
-          ourObj.rotation.y -= 0.008;
+          ourObj.rotation.y -= 0.0002;
 
           renderer.render(scene, camera);
         };
